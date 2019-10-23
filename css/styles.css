@@ -1,0 +1,236 @@
+.personFull p{
+    font-size: 1em;
+  }
+.personFull{
+    list-style: none;
+    text-align: center;
+    line-height: .4em;
+    margin: 0 auto 20%;
+    padding: 0;
+    width: 100%;
+}
+.personFull img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: 0;
+}
+.popup{
+    display:none;
+    position: fixed;
+    top: 2%;
+    left: 4%;
+    z-index: 1;
+    width: 90%;
+    height: 100%;
+    max-height: 450px;
+    margin: 7% 0 20%;
+    padding: 0;
+    background: #fff;
+    border-radius: 10px;
+    border: 3px solid darkcyan;
+  }
+
+.popup-content-text{
+    width: 100%;
+    margin-top: -7px;
+}
+.personFull span p:last-child{
+    padding-bottom: 20px;
+  }
+
+.popup-content{
+    margin: auto;
+    max-width: 500px;
+    max-height: 300px;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+}
+#close{
+    display: inline-block;
+    padding: 20px 10px;
+    margin-left: 90%;
+    cursor: pointer;
+}
+.personExtraData{
+  padding-top: 10px;
+  border-top: 2px solid lightgrey;
+  padding-bottom: 5px;
+  height: 90%;
+  line-height: .8em;
+}
+.person{
+  transition: transform .5s ease-out, box-shadow .5s ease-out;
+}
+.person:hover{
+  transform: translateY(-5px) translateX(-5px);
+  box-shadow: 10px 10px 6px lightgrey;
+  cursor: pointer;
+}
+
+
+/*general*/
+*{
+    padding: 0;
+}
+
+body{
+    background-color: #e0ebeb;
+    }
+
+.js ul{
+    width: 80%;
+    margin: 2% 10%;
+}
+
+.title h1{
+    color: grey;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+/* styling the input */
+#search{
+  display:block;
+  margin: 0 auto 20px;
+  height: 30px;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.person img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 15px 0 15px 15px;
+    float: left;
+}
+
+.person p{
+    color: grey;
+    font-size: 1.3em;
+    line-height: .6em;
+    margin: 0;
+}
+.person p:first-child, .person p:last-child,
+.personFull p:first-child, .personFull p:last-child,
+.address{
+    text-transform: capitalize;
+}
+.person p:first-child{
+    font-weight: 700;
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+/*styling the li items: paragraphs float right*/
+.person {
+    list-style-type: none;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 3px 3px lightgrey;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.js ul span{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+/** STYLING THE ARROW BTNS   **/
+
+#prev, #next{
+  background:powderblue;
+  border-radius: 10px;
+  padding:  5px 20px;
+  display: inline-block;
+}
+
+.arrows{
+  display: flex;
+  justify-content: space-between;
+}
+/*using flex to display 2 and 3 columns:*/
+/***********************************************/
+@media (min-width: 650px){
+  .title h1{
+       margin-left: 2.5%;
+  }
+  .js ul{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .person{
+        width: 45%;
+    }
+    .person p{
+        font-size: .8em;
+        margin: 0;
+    }
+    .js h1{
+        text-align: left;
+        padding-left: 1.4%;
+    }
+/*    style the popup window*/
+    .popup{
+        width: 50%;
+        left: 27%;
+    }
+}
+@media (min-width: 1124px){
+   .popup{
+        min-width: 450px;
+        width: 40%;
+        left: 29%;
+        top: -5%;
+    }
+  .title h1{
+    text-align: left;
+     margin-left: 2.2%;
+  }
+    .person{
+        width: 30%;
+        height: 150px;
+    }
+    .person p{
+        font-size: 1em;
+    }
+    .js ul span{
+      padding: 30px 0;
+    }
+    .person p:first-child{
+        font-size: .9em;
+        font-weight: lighter;
+    }
+    .person img{
+      margin-top: 28px;
+    }
+    /* style the input search */
+    .title {
+      display: flex;
+      vertical-align: middle;
+      justify-content: space-around;
+    }
+    #search{
+      margin-top: 16.08px;
+    }
+}
+
+
+
+
+
+
+
