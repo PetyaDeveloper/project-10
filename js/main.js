@@ -16,7 +16,7 @@ function displayInfo(data){
         </span>
         <div class="personExtraData" style="display:none">
           <p>${item.cell}</p>
-          <p class="address">${item.location.street}, ${item.location.state}, ${item.location.postcode}</p>
+          <p class="address">${item.location.street.name} ${item.location.street.number}, ${item.location.state}, ${item.location.postcode}</p>
           <p>Birthday: ${date}/${month}/${year}</p>
           
           <span class = "arrows">
@@ -24,6 +24,7 @@ function displayInfo(data){
             <button id="next">&#10095;</button>
           </span>
         </div></li>`;
+        console.log(`${item.location.street.name}`)
     });
     personList += '<ul><table>';
     $('.js').html(personList);
